@@ -27,10 +27,10 @@ var formatDecimalsRegExp = /(?:\.0*|(\.[^0]+)0+)$/;
 
 var map = {
   b:  1,
-  kb: 1 << 10,
-  mb: 1 << 20,
-  gb: 1 << 30,
-  tb: ((1 << 30) * 1024)
+  kb: Math.pow(10,3),
+  mb: Math.pow(10,6),
+  gb: Math.pow(10,9),
+  tb: Math.pow(10,12)
 };
 
 var parseRegExp = /^((-|\+)?(\d+(?:\.\d+)?)) *(kb|mb|gb|tb)$/i;
